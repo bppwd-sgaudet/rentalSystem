@@ -1,0 +1,6 @@
+<h1><strong>Inventory</strong></h1>
+<% @products.each do |product| %>
+	<div class="col-md-3">
+		<%= render partial: "product_teaser", locals: {product: product} %>
+	</div>
+<% end %>

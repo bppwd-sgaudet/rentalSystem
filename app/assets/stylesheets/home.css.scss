@@ -1,0 +1,72 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.row {
+	display: flex;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#navigation button a {
+	color: black;
+}
+
+#navigation button a:hover {
+	background-color: buttonface;
+}
+
+#navigation button {
+	margin-right: 20px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 74px;
+  background-color: #e7e7e7;
+}
+
+#footer .nav a:hover {
+	background-color: rgb(244, 244, 244);
+}
+
+#footer a {
+	color: gray;
+}
+
+#header {
+	height: 74px;
+	background-color: #222222;
+}
+
+#header nav {
+	height: 73px;
+}
+
+#header #main-nav a:hover {
+	background-color: rgb(62, 62, 62);
+}
+
+#navigation ul {
+	padding-top: 1.2%;
+}
+
+#navigation a {
+	color: white;
+}
+
+img {
+	width: 50px;
+}
+
+.item img {
+	width: 1920px;
+}

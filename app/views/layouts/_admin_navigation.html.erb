@@ -1,0 +1,22 @@
+<div class="row" id="header">
+	<div class="col-md-12">
+		<nav class="navbar-inverse navbar-fixed-top" id="navigation">
+			<a class="navbar-brand" href="/">
+				<%= image_tag("http://placehold.it/50x50") %>      					
+			</a>
+			<ul class="nav navbar-nav" id="main-nav">
+				<li><%= link_to "Home", "/" %></li>
+				<li><%= link_to "Admin", "/admin/index" %> </li>
+				<li><%= link_to "Manage Products", "/products" %></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<% if user_signed_in? %>
+						<button type="button" class="btn btn-default"><%= link_to "Log Out", destroy_user_session_path, :method => "delete" %>
+						</button>
+					<% end %>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
